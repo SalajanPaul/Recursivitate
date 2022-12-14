@@ -16,6 +16,7 @@
         i = i + 1
     return -1
 
+
 def adunare(n):         #1+2+3+4 = 10
     s = 0
     i = 1
