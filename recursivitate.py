@@ -1,11 +1,11 @@
-def cautare_sir(sirprincipal, subsir):
+﻿def cautare_sir(sirprincipal, subsir):
     i = 0  # indice pt parcurgere sir principal
-    n = len(sirprincipal) - len(subsir)  # cat de mult din sirul principal are rost sa parcurga
+    n = len(sirprincipal) - len(subsir)  # cat de mult din sirul principal are rost sa parcurgem
     while i <= n:
         j = 0
         flg = True
         while flg and j < len(subsir):  # verific daca subsirul meu il gasesc in sir principal.Daca difera = ies
-            if sirprincipal(i + j) != subsir(j):
+            if sirprincipal[i + j] != subsir[j]:
                 flg = False
             j = j + 1
             # daca din while ul precedent s a iesit cu flg==true este posibil ca subsirul meu sa fi gasit
@@ -37,7 +37,7 @@ def factrec(n):
         return n * factrec(n-1)
 
 if __name__ == '__main__':
-    # print(cautare_sir("masina", "vit"))
-    print(adunare(4))
-    print(adunarerec(4))
-    print(factrec(4))
+    print(cautare_sir("masina", "sin"))
+    # print(adunare(4))
+    # print(adunarerec(4))
+    # print(factrec(4))
